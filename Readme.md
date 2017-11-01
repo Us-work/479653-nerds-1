@@ -1,7 +1,7 @@
 ﻿# Личный проект «Нёрдс»
 
 * Студент: [Ярослав Ус](https://up.htmlacademy.ru/htmlcss/19/user/479653).
-* Наставник: [Евгений Закурдаев] (https://htmlacademy.ru/profile/id25657).
+* Наставник: [Евгений Закурдаев](https://htmlacademy.ru/profile/id25657).
 
 ---
 
