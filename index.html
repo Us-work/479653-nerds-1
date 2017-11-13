@@ -3,87 +3,86 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Дизайн-студия Нёрдс</title>
-		<link href="style.css" rel="stylesheet">
+		<link href="css/style.css" type="text/css" rel="stylesheet">
 	</head>
 
-<body>
-<!--Шапка сайта-->
-  	<header class="main-header">
-  		<div class="container">
-  			<nav class="main-navigation">
-  				<a class="main-header-logo">
-  					<img src="img/nerds-logo.svg" alt="Дизайн-студия Нёрдс">
-  				</a>
-  				<ul class="site-navigation">
-  					<li><a href="#">Студия</a></li>
-  					<li><a href="#">Клиенты</a></li>
-  					<li><a href="#">Магазин</a></li>
-  					<li><a href="#">Контакты</a></li>
-  				</ul>
-  			</nav>	
-  			<a class="basket" href="#"><img src="img/cart-icon.svg" alt="">Корзина</a>
-  		</div>
-  	</header>
+	<body>
+		<!--Шапка сайта-->
+		<header class="main-header">
+			<div class="container">
+				<nav class="main-navigation">
+					<a class="main-header-logo">
+						<img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс">
+					</a>
+					<ul class="site-navigation" aria-label="Главное меню" tabindex="0">
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="catalog.html">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<ul class="user-navigation" aria-label="Здесь находится ваша корзина покупок" tabindex="0">
+					<li><a class="basket" href="#">Корзина</a></li>	
+				</ul>
+			</div>
+		</header>
  
-<!--Основной раздел сайта-->
-  	<main>
-  		<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1> 
-
-<!--Раздел - Преимущества-->
-  		<section class="advantages">
-  			<div class="container">
-  				<h2 class="visually-hidden">Преимущества</h2>
-  				<ul class="advantages-list">
-  					<li class="advantage-item">
-  						<h3>Долго, дорого, скрупулезно.</h3>
-  						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  						<img src="img/slide1.png" alt="">
-  						<a class="button advantage-item-button" href="#">Узнать больше</a>
-  					</li>
-  					<li class="advantage-item">
-  						<h3>Любим математику как никто другой</h3>
-  						<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-  						<img src="img/slide2.png" alt="">
-  						<a class="button advantage-item-button" href="#">Узнать больше</a>
-  					</li>
-  					<li class="advantage-item">
-  						<h3>Только ночь, только хардкор</h3>
-  						<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-  						<img src="img/slide3.png" alt="">
-  						<a class="button advantage-item-button" href="#">Узнать больше</a>
-  					</li>  			
-  				</ul>
-  			</div>	
-  		</section>   
-
-<!--Раздел сайта - Услуги-->
-  		<section class="services">
-  			<div class="container">
-  				<h2 class="visually-hidden">Услуги компании</h2>
-  				<ul class="services-list">
-  					<li class="service-item">
-  						<h3>Веб-сайты</h3>
-  						<img src="img/illustration-1.png" alt="">
-  						<p>Мир никогда не будет преждним после того, как увидит ваш сайт!</p>
-  						<a class="button service-item-button" href="#">Заказать</a>
-  					</li>
-  					<li class="service-item">
-  						<h3>Приложения</h3>
-  						<img src="img/illustration-2.png" alt="">
-  						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-  						<a class="button service-item-button" href="#">Заказать</a>
-  					</li>
-  					<li class="service-item">
-  						<h3>Презентации</h3>
-  						<img src="img/illustration-3.png" alt="">
-  						<p>Вы даже не подозреваете насколько вы изучительны!</p>
-  						<a class="button service-item-button" href="#">Заказать</a>
-  					</li>  			
-  				</ul>
-  			</div>
-  		</section> 
-
-<!--Раздел сайта - О нас--> 
+		<!--Основной раздел сайта-->
+		<main>
+			<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1> 
+			<!--Раздел - Преимущества-->
+			<section class="advantages">
+				<div class="container">
+					<h2 class="visually-hidden">Преимущества</h2>
+					<ul class="advantages-list">
+						<li class="advantage-item">
+							<h3>Долго, дорого, скрупулезно.</h3>
+							<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+							<img src="img/slide1.png" width="698" height="413" alt="Мобильные приложения и веб-сайт студии Нёрдс">
+							<a class="button advantage-item-button" href="#" aria-label="Узнать больше о продуктах студии Нёрдс">Узнать больше</a>
+						</li>
+						<li class="advantage-item">
+							<h3>Любим математику как никто другой</h3>
+							<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+							<img src="img/slide2.png" width="698" height="413" alt="Шаблоны веб-сайтов студии Нёрдс">
+							<a class="button advantage-item-button" href="#" aria-label="Узнать больше о методах нашей работы">Узнать больше</a>
+						</li>
+						<li class="advantage-item">
+							<h3>Только ночь, только хардкор</h3>
+							<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+							<img src="img/slide3.png" width="698" height="413" alt="Шаблоны нашей веб-студии для мобильных устройств и планшетов">
+							<a class="button advantage-item-button" href="#" aria-label="Узнать больше о нашей команде">Узнать больше</a>
+						</li>  			
+					</ul>
+				</div>	
+			</section>   
+			<!--Раздел сайта - Услуги-->
+			<section class="services">
+				<div class="container">
+					<h2 class="visually-hidden" tabindex="0">Услуги компании</h2>
+					<ul class="services-list">
+						<li class="service-item">
+							<h3 tabindex="0" aria-label="Веб-сайты, созданные нашими разработчиками">Веб-сайты</h3>
+							<img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты студии Нёрдс">
+							<p>Мир никогда не будет преждним после того, как увидит ваш сайт!</p>
+							<a class="button service-item-button" href="#" aria-label="Сделать заказ на разработку сайта">Заказать</a>
+						</li>
+						<li class="service-item">
+							<h3 tabindex="0" aria-label="Приложения, созданные нашими разработчиками">Приложения</h3>
+							<img src="img/illustration-2.png" width="300" height="146" alt="Приложения студии Нёрдс">
+							<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+							<a class="button service-item-button" href="#" aria-label="Сделать заказ на разработку приложения">Заказать</a>
+						</li>
+						<li class="service-item">
+							<h3 tabindex="0" aria-label="Презентации, созданные нашими разработчиками">Презентации</h3>
+							<img src="img/illustration-3.png" width="300" height="146" alt="Презентации студии Нёрдс">
+							<p>Вы даже не подозреваете насколько вы изучительны!</p>
+							<a class="button service-item-button" href="#" aria-label="Сделать заказ на разработку презентации">Заказать</a>
+						</li>  			
+					</ul>
+				</div>
+			</section> 
+			<!--Раздел сайта - О нас--> 
 			<section class="about">
 				<div class="container">
 					<b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b>
@@ -97,12 +96,12 @@
 						</ul>
 					</div>
 					<div class="about-right">
-						<img src="img/nerds-illustration.png" alt="">
+						<img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип дизайн-студии Нёрдс">
 						<table class="about-progresses">
 							<caption>С 2004 года любим точность во всем:</caption>
 							<tr class="about-progresse-item">
 								<td>146<sup>%</sup></td>
-				 				<td>Уровень самоотдачи</td>
+								<td>Уровень самоотдачи</td>
 							</tr>
 							<tr class="about-progresse-item">
 								<td>100<sup>%</sup></td>
@@ -116,8 +115,7 @@
 					</div>
 				</div>	
 			</section>
-
-<!--Раздел сайта - Наши работы-->
+			<!--Раздел сайта - Наши работы-->
 			<section class="works">
 				<div class="container">
 					<h2 class="visually-hidden">Наши работы</h2>
@@ -146,8 +144,7 @@
 				</div>
 			</section>
 		</main>
-
-<!--Подвал сайта-->
+		<!--Подвал сайта-->
 		<footer class="main-footer">
 			<div class="footer-contacts">
 				<img src="img/map.png" alt="Карта">
@@ -161,19 +158,18 @@
 			</div>
 			<div class="footer-social">
 				<ul>
-					<li><a class="social-button social-button-vk" href="#"><img src="img/vk-icon.svg" alt="Вконтакте">Вконтакте</a></li>
-					<li><a class="social-button social-button-fasebook" href="#"><img src="img/fb-icon.svg" alt="Фейсбук">Фейсбук</a></li>
-					<li><a class="social-button social-button-inst" href="#"><img src="img/insta-icon.svg" alt="Инстаграм">Инстаграм</a></li>
+					<li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
+					<li><a class="social-button social-button-fasebook" href="#">Фейсбук</a></li>
+					<li><a class="social-button social-button-inst" href="#">Инстаграм</a></li>
 				</ul>
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</footer> 
 
-<!--Форма-Напишите нам -->
+		<!--Форма-Напишите нам -->
 		<section class="modal modal-write">
 			<h2>Напишите нам</h2>
-
 			<form class="write-form" action="https://echo.htmlacademy.ru" method="post">
 				<label for="name">Ваше имя:
 					<input class="name-icon-user" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
@@ -186,8 +182,7 @@
 				</label>
 				<button class="button" type="submit">Отправить</button>
 			</form>
-			<button class="button modal-close" type="submit"><img src="img/close-cross.svg" alt="Закрыть">Закрыть</button>
+			<button class="button modal-close" type="submit">Закрыть</button>
 		</section>
 	</body>
 </html>
-
