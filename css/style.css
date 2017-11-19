@@ -1,0 +1,173 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	font: inherit;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: #fb565a;
+	border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-header {
+	background-color: #eeeeee;
+}
+.main-navigation,
+.user-navigation {
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+	font-weight: 500;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.advantages {
+	background-color: #eeeeee;
+}
+
+.advantages-list {
+	list-style: none;
+}
+
+.advantage-item h3 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+}
+
+.services-list {
+	list-style: none;
+}
+
+.service-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.about b {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.about-left h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.about-works {
+	list-style: none;
+}
+
+.about-progress caption {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.about-progress-item td:first-child {
+	font-size: 45px;
+	line-height: 10px;
+	font-weight: 700;
+}
+
+.about-progress-item td:last-child {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.works-list {
+	list-style: none;
+}
+
+.container-footer-contacts b {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.container-footer-contacts p {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.footer-social li {
+	list-style: none;
+}
+
+.footer-social b {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.footer-social p {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.modal-write h2 {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.modal-write label {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.modal-write placeholder {
+	font-size: 16px;
+	line-height: 18px;
+	color: (161, 161, 161, 0.5);
+}
