@@ -144,7 +144,7 @@ a {
 	list-style: none;
 }
 
-.social-button a {
+.social-link a {
 	display: block;
 	font-size: 0;
 	width: 78px;
@@ -155,20 +155,20 @@ a {
 	background-position: center;
 }
 
-.social-button a:hover,
-.social-button a:focus {
+.social-link a:hover,
+.social-link a:focus {
 	background-color: #e74246;
 }
 
-.social-button-vk a {
+.social-link-vk a {
 	background-image: url("../img/vk-icon.svg");
 }
 
-.social-button-facebook a {
+.social-link-facebook a {
 	background-image: url("../img/fb-icon.svg");
 }
 
-.social-button-inst a {
+.social-link-inst a {
 	background-image: url("../img/insta-icon.svg");
 }
 
