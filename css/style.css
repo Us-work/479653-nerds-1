@@ -144,7 +144,7 @@ a {
 	list-style: none;
 }
 
-.social-link a {
+.social-link {
 	display: block;
 	font-size: 0;
 	width: 78px;
@@ -155,20 +155,20 @@ a {
 	background-position: center;
 }
 
-.social-link a:hover,
-.social-link a:focus {
+.social-link:hover,
+.social-link:focus {
 	background-color: #e74246;
 }
 
-.social-link-vk a {
+.social-link-vk {
 	background-image: url("../img/vk-icon.svg");
 }
 
-.social-link-facebook a {
+.social-link-facebook {
 	background-image: url("../img/fb-icon.svg");
 }
 
-.social-link-inst a {
+.social-link-inst {
 	background-image: url("../img/insta-icon.svg");
 }
 
