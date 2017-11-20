@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Roboto", Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -27,7 +27,7 @@ a {
 
 .button:hover,
 .button:focus {
-  background-color: #e74246;
+ 	background-color: #e74246;
 }
 
 .button:active {
@@ -38,6 +38,7 @@ a {
 .main-header {
 	background-color: #eeeeee;
 }
+
 .main-navigation,
 .user-navigation {
 	font-size: 16px;
@@ -152,6 +153,10 @@ a {
 .footer-social p {
 	font-size: 16px;
 	line-height: 22px;
+}
+
+.social-button {
+	
 }
 
 .modal-write h2 {
