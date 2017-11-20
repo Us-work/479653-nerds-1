@@ -144,6 +144,34 @@ a {
 	list-style: none;
 }
 
+.social-button a {
+	display: block;
+	font-size: 0;
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+	background-color: #e1e1e1;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.social-button a:hover,
+.social-button a:focus {
+	background-color: #e74246;
+}
+
+.social-button-vk a {
+	background-image: url("../img/vk-icon.svg");
+}
+
+.social-button-facebook a {
+	background-image: url("../img/fb-icon.svg");
+}
+
+.social-button-inst a {
+	background-image: url("../img/insta-icon.svg");
+}
+
 .footer-social b {
 	font-size: 36px;
 	line-height: 36px;
@@ -153,10 +181,6 @@ a {
 .footer-social p {
 	font-size: 16px;
 	line-height: 22px;
-}
-
-.social-button {
-	
 }
 
 .modal-write h2 {
