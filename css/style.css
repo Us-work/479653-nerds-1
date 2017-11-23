@@ -203,65 +203,139 @@ a {
 
 /*размечаем сетку*/
 
-.container {
+.container-navigation {
 	width: 1200px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
+	padding: 0 20px;
 	display: flex;
+	justify-content: space-between;
 }
 
 .main-navigation {
 	width: 800px;
-	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-navigation {
+	width: 440px;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-advantages {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.advantage-item {
+	padding: 0;
+	margin: 0;
 	display: flex;
 }
 
-.user-navigation {
-	margin-left: auto;
-}
-
-
-.services .container{
-	width: 1200px;
+.wrapper-advantage-left {
 	padding: 0;
 	margin: 0;
-	padding-left: 20px;
-	margin-right: auto;
-	margin-left: auto;
+}
+
+.wrapper-advantage-right {
+	width: 760px;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper-advantage-right img {
+	margin: auto;
+}
+
+.container-services {
+	width: 1200px;
+	height: 510px;
+	padding: 80px 20px;
+	margin: 0 auto;
 }
 
 .services-list {
-	display: flex;
-	width: 1100px;
 	padding: 0;
-	justify-content: space-between;
+	margin: 0;
+	display: flex;
 }
 
 .service-item {
 	width: 300px;
-	padding: 0;
-	margin: 0;
+	margin-right: 100px;
 }
 
-.about-left {
-	width: 660px;
-	margin-right: auto;
+.container-about {
+	width: 1200px;
+	height: 530px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.about-right {
-	width: 360px;
-	margin-right: auto;
+.container-works {
+	width: 1200px;
+	height: 182px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .works-list {
-	width: 1160px;
+	padding: 0;
+	margin: 0;
 	display: flex;
-	
+	justify-content: space-between;
 }
 
 .works-item {
 	width: 260px;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper-catalog {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper-catalog-left {
+	width: 280px;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper-catalog-right {
+	width: 760px;
+	padding: 0;
+	margin: 0;
+}
+
+.catalog-list {
+	width: 760px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+.catalog-list-item {
+	width: 360px;
+	height: 620px;
+	margin-bottom: 35px;
 	margin-right: 40px;
 }
+
+.catalog-list-item:nth-child(2n) {
+	margin-right: 0;
+}
+
+
+

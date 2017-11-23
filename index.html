@@ -11,7 +11,7 @@
 	<body>
 		<!--Шапка сайта-->
 		<header class="main-header">
-			<div class="container">
+			<div class="container-navigation">
 				<nav class="main-navigation">
 					<a class="main-header-logo">
 						<img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс">
@@ -31,19 +31,23 @@
  
 		<!--Основной раздел сайта-->
 		<main>
-			<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1> 
 			<!--Раздел - Преимущества-->
+			<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
 			<section class="advantages">
 				<h2 class="visually-hidden">Преимущества</h2>
-				<div class="container">
+				<div class="container-advantages">
 					<ul class="advantages-list">
 						<li class="advantage-item">
-							<h3>Долго, дорого, скрупулезно.</h3>
-							<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-							<img src="img/slide1.png" width="698" height="413" alt="Мобильные приложения и веб-сайт студии Нёрдс">
-							<a class="button advantage-item-button" href="#" aria-label="Узнать больше о продуктах студии Нёрдс">Узнать больше</a>
+							<div class="wrapper-advantage-left">
+								<h3>Долго, дорого, скрупулезно.</h3>
+								<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+								<a class="button advantage-item-button" href="#" aria-label="Узнать больше о продуктах студии Нёрдс">Узнать больше</a>
+							</div>
+							<div class="wrapper-advantage-right">
+								<img src="img/slide1.png" width="698" height="413" alt="Мобильные приложения и веб-сайт студии Нёрдс">
+							</div>
 						</li>
-						<li class="advantage-item">
+						<!--<li class="advantage-item">
 							<h3>Любим математику как никто другой</h3>
 							<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
 							<img src="img/slide2.png" width="698" height="413" alt="Шаблоны веб-сайтов студии Нёрдс">
@@ -54,14 +58,14 @@
 							<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 							<img src="img/slide3.png" width="698" height="413" alt="Шаблоны нашей веб-студии для мобильных устройств и планшетов">
 							<a class="button advantage-item-button" href="#" aria-label="Узнать больше о нашей команде">Узнать больше</a>
-						</li>  			
+						</li>-->  			
 					</ul>
 				</div>	
 			</section>   
 			<!--Раздел сайта - Услуги-->
 			<section class="services">
 				<h2 class="visually-hidden">Услуги компании</h2>
-				<div class="container">
+				<div class="container-services">
 					<ul class="services-list">
 						<li class="service-item">
 							<h3 aria-label="Веб-сайты, созданные нашими разработчиками">Веб-сайты</h3>
@@ -86,7 +90,7 @@
 			</section> 
 			<!--Раздел сайта - О нас--> 
 			<section class="about">
-				<div class="container">
+				<div class="container-about">
 					<div class="about-left">	
 						<b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b>
 						<p>Исповедуем принцип минимализма и чистоты.Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p> 
@@ -120,7 +124,7 @@
 			<!--Раздел сайта - Наши работы-->
 			<section class="works">
 				<h2 class="visually-hidden">Наши работы</h2>
-				<div class="container">
+				<div class="container-works">
 					<ul class="works-list">
 						<li class="works-item">
 							<a class="work-link" href="#">
