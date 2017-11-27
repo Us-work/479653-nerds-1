@@ -132,13 +132,13 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
-.about-progress-item td:first-child {
+.about-progress-item:first-child td {
 	font-size: 45px;
 	line-height: 10px;
 	font-weight: 700;
 }
 
-.about-progress-item td:last-child {
+.about-progress-item:last-child td {
 	font-size: 16px;
 	line-height: 18px;
 }
@@ -221,7 +221,6 @@ input[type="radio"].visually-hidden {
 
 /* Стилизация кнопок пагинации */
 .pagination-list {
-	width: 500px;
 	height: 50px;
 	padding: 0;
 	margin: 0;
@@ -265,16 +264,25 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation {
-	width: 800px;
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
+}
+
+.main-header-logo {
+	margin-right: 200px;
 }
 
 .site-navigation {
-	width: 440px;
 	padding: 0;
 	display: flex;
-	justify-content: space-between;
+}
+
+.site-navigation li {
+	margin-left: 48px;
+}
+
+.site-navigation li:first-child {
+	margin-left: 0;
 }
 
 .container-advantages {
@@ -331,6 +339,14 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 }
 
+.about-left {
+	width: 660px;
+}
+
+.about-right {
+	width: 360px;
+}
+
 .container-works {
 	width: 1200px;
 	height: 182px;
@@ -372,23 +388,24 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list {
-	width: 760px;
+	width: 800px;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
+	margin-top: -35px;
+	margin-left: -40px;
+	list-style: none;
 }
 
 .catalog-list-item {
 	width: 360px;
 	height: 620px;
-	margin-bottom: 35px;
-	margin-right: 40px;
+	margin-top: 35px;
+	margin-left: 40px;
 }
 
-.catalog-list-item:nth-child(2n) {
-	margin-right: 0;
+.footer-contacts img {
+	position: absolute;
 }
-
-
 
