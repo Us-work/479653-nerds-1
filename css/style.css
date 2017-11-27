@@ -555,8 +555,28 @@ input[type="radio"].visually-hidden {
 	margin-left: 40px;
 }
 
+.main-footer {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
 .footer-contacts img {
-	/*position: absolute;*/
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.container-footer-contacts {
+	position: relative;
+	z-index: 2;
+	background-color: #ffffff;
+	width: 320px;
+	height: 310px;
+	padding-left: 50px;
+	padding-top: 55px;
+	margin-top: 50px;
 }
 
 .footer-social {
