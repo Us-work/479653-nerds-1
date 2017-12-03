@@ -15,6 +15,15 @@ a {
 	text-decoration: none;
 }
 
+/*Прячем заголовки*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -32,6 +41,17 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*Задаем параметры для контейнера*/
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+/*Задаем общие параметры для кнопок*/
 
 .button {
 	font: inherit;
@@ -53,19 +73,47 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/*Стилизуем Шапку*/
+
 .main-header {
 	background-color: #eeeeee;
 }
 
-.main-navigation,
-.user-navigation {
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.main-header-logo {
+	margin-right: 200px;
+}
+
+.main-navigation {
+	display: flex;
+	align-items: center;
 	font-size: 16px;
 	line-height: 30px;
 	text-transform: uppercase;
 }
 
-.site-navigation,
 .user-navigation {
+	display: block;
+	font-size: 16px;
+	/*line-height: 30px;*/
+	text-transform: uppercase;
+	list-style: none;
+}
+/*Не пойму в чем дело. У меня Корзина в браузере
+не размещается по центру (по высоте). И текст получается
+выше, чем у основной навигации*/
+
+.site-navigation {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
 	list-style: none;
 }
 
@@ -87,23 +135,18 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.container-slider {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+.site-navigation li {
+	margin-left: 48px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
+.site-navigation li:first-child {
+	margin-left: 0;
 }
+
+/*Стилизуем раздел Преимущества*/
 
 .slider {
   position: relative;
-  
   background-color: #eeeeee;
 }
 
@@ -251,8 +294,23 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
+/*Стилизуем раздел Услуги*/
+
+.services {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
 .services-list {
+	display: flex;
+	padding: 0;
+	margin: 0;
 	list-style: none;
+}
+
+.service-item {
+	width: 300px;
+	margin-right: 100px;
 }
 
 .service-item h3 {
@@ -262,7 +320,28 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
-.about b {
+/*Стилизуем раздел О нас*/
+
+.about {
+	padding-bottom: 80px;
+}
+
+.about-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-left {
+	width: 660px;
+	padding-top: 80px;
+}
+
+.about-right {
+	width: 360px;
+	padding-top: 40px;
+}
+
+.about-left b {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
@@ -293,23 +372,79 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 }
 
+/*Стилизуем раздел Наши работы*/
+
 .works-list {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	margin: 0;
+	margin-bottom: 80px;
 	list-style: none;
 }
 
-.container-footer-contacts b {
+.works-item {
+	width: 260px;
+	margin: 0;
+	padding: 0;
+}
+
+/*Как разместить картинки посередине контейнера?*/
+
+/*Стилизуем Подвал сайта*/
+
+.footer-contacts {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 70px;
+}
+
+.footer-contacts img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: -1;
+	width: 100%;
+}
+
+.footer-contacts-cards {
+	width: 320px;
+	height: 310px;
+	background-color: #ffffff;
+	margin-top: 55px;
+	margin-bottom: 55px;
+}
+
+.footer-contacts-cards b {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
 }
 
-.container-footer-contacts p {
+.footer-contacts-cards p {
 	font-size: 16px;
 	line-height: 18px;
 }
 
-.footer-social li {
+.footer-social {
+	display: flex;
+	box-sizing: border-box;
+}
+
+.footer-social ul {
 	list-style: none;
+}
+
+.social-links {
+	width: 260px;
+	padding: 0;
+	margin: 0;
+	margin-right: 140px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .social-link {
@@ -340,16 +475,18 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/insta-icon.svg");
 }
 
-.footer-social b {
+.container-sale b {
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
 }
 
-.footer-social p {
+.container-sale p {
 	font-size: 16px;
 	line-height: 22px;
 }
+
+/*Форма Напишите нам*/
 
 .modal-write h2 {
 	font-size: 45px;
@@ -369,11 +506,172 @@ input[type="radio"].visually-hidden {
 	color: (161, 161, 161, 0.5);
 }
 
+/*Стилизация страницы КАТАЛОГА*/
+
+.page-title {
+	display: block;
+	font-size: 55px;
+	line-height: 55px;
+	padding-top: 80px;
+	padding-bottom: 120px;
+	margin: 0 auto;
+	background-color: #eeeeee;
+	margin-bottom: 60px;
+}
+
+/*Каталог и фильтры*/
+
+.wrapper-catalog {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper-catalog-left {
+	width: 280px;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper-catalog-right {
+	width: 760px;
+	padding: 0;
+	margin: 0;
+}
+
+/*Стилизация фильтра стоимости*/
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  background-color: #f1f1f1;
+  
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+/*Стилизация списка шаблонов*/
+
+.catalog-list {
+	width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	margin-top: -35px;
+	margin-left: -40px;
+	list-style: none;
+}
+
+.catalog-list-item {
+	width: 360px;
+	height: 620px;
+	margin-top: 35px;
+	margin-left: 40px;
+}
+
 /* Стилизация кнопок пагинации */
+
 .pagination-list {
 	height: 50px;
 	padding: 0;
 	margin: 0;
+	margin-top: 60px;
+	margin-bottom: 60px;
 	display: flex;
 	list-style: none;
 }
@@ -401,199 +699,3 @@ input[type="radio"].visually-hidden {
 .pagination-item-next a {
 	width: 260px;
 }
-
-
-/*размечаем сетку*/
-
-.container-navigation {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.main-navigation {
-	display: flex;
-	align-items: center;
-}
-
-.main-header-logo {
-	margin-right: 200px;
-}
-
-.site-navigation {
-	padding: 0;
-	display: flex;
-}
-
-.site-navigation li {
-	margin-left: 48px;
-}
-
-.site-navigation li:first-child {
-	margin-left: 0;
-}
-
-.container-advantages {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
-}
-
-.advantage-item {
-	padding: 0;
-	margin: 0;
-	display: flex;
-}
-
-.wrapper-advantage-left {
-	padding: 0;
-	margin: 0;
-}
-
-.wrapper-advantage-right {
-	width: 760px;
-	padding: 0;
-	margin: 0;
-}
-
-.wrapper-advantage-right img {
-	margin: auto;
-}
-
-.container-services {
-	width: 1200px;
-	height: 510px;
-	padding: 80px 20px;
-	margin: 0 auto;
-}
-
-.services-list {
-	padding: 0;
-	margin: 0;
-	display: flex;
-}
-
-.service-item {
-	width: 300px;
-	margin-right: 100px;
-}
-
-.container-about {
-	width: 1200px;
-	height: 530px;
-	margin: 0 auto;
-	padding: 0 20px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.about-left {
-	width: 660px;
-}
-
-.about-right {
-	width: 360px;
-}
-
-.container-works {
-	width: 1200px;
-	height: 182px;
-	margin: 0 auto;
-	padding: 0 20px;
-}
-
-.works-list {
-	padding: 0;
-	margin: 0;
-	display: flex;
-	justify-content: space-between;
-}
-
-.works-item {
-	width: 260px;
-	margin: 0;
-	padding: 0;
-}
-
-.wrapper-catalog {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.wrapper-catalog-left {
-	width: 280px;
-	padding: 0;
-	margin: 0;
-}
-
-.wrapper-catalog-right {
-	width: 760px;
-	padding: 0;
-	margin: 0;
-}
-
-.catalog-list {
-	width: 800px;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
-	margin-top: -35px;
-	margin-left: -40px;
-	list-style: none;
-}
-
-.catalog-list-item {
-	width: 360px;
-	height: 620px;
-	margin-top: 35px;
-	margin-left: 40px;
-}
-
-.main-footer {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
-}
-
-.footer-contacts img {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
-}
-
-.container-footer-contacts {
-	position: relative;
-	z-index: 2;
-	background-color: #ffffff;
-	width: 320px;
-	height: 310px;
-	padding-left: 50px;
-	padding-top: 55px;
-	margin-top: 50px;
-}
-
-.footer-social {
-	width: 1200px;
-	height: 220px;
-	padding: 0 20px;
-	display: flex;
-	margin: 0 auto;
-	box-sizing: border-box;
-}
-
-.social-links {
-	width: 260px;
-	padding: 0;
-	margin: 0;
-	margin-right: 140px;
-	display: flex;
-	justify-content: space-between;
-}
-

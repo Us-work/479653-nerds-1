@@ -11,9 +11,9 @@
 	<body>
 		<!--Шапка сайта-->
 		<header class="main-header">
-			<div class="container-navigation">
+			<div class="container header-container">
 				<nav class="main-navigation">
-					<a class="main-header-logo" href="index.html">
+					<a class="main-header-logo">
 						<img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс">
 					</a>
 					<ul class="site-navigation" aria-label="Главное меню">
@@ -24,24 +24,35 @@
 					</ul>
 				</nav>
 				<ul class="user-navigation" aria-label="Здесь находится ваша корзина покупок">
-					<li><a class="basket" href="#">Корзина</a></li> 
+					<li><a class="basket" href="#">Корзина</a></li>	
 				</ul>
 			</div>
 		</header>
 		<!--Основной раздел сайта-->	
-		<main>
+		<main class="catalog">
 			<h1 class="page-title">Магазин готовых шаблонов</h1> 
-      <!-- Фильтры выбора шаблонов-->
+	<!-- Фильтры выбора шаблонов-->
       		<div class="wrapper-catalog">
       		<div class="wrapper-catalog-left">
 			<section class="filters">
 				<div class="container">
 					<h2 class="visually-hidden">Фильтр товаров</h2>
 					<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-						<fieldset>
+						<fieldset class="filter-item">
 							<legend>Стоимость:</legend>
-							<input type="range" min="1" max="30000">
-							<!--Какие теги добавить, чтобы показать значение в диапазоне? -->            
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar" style="margin-left: 20%; width: 30%"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+									<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+								</div>
+							</div>
 						</fieldset>
 						<fieldset>
 							<legend>Сетка:</legend>
@@ -168,22 +179,26 @@
 		<footer class="main-footer">
 			<div class="footer-contacts">
 				<img src="img/map.png" alt="Карта">
-				<div class="container-footer-contacts">
-					<b>Nёrds Design Studio</b>
-					<p>191186, Санкт-Петербург<br>
-					ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
-					<a href="#">Напишите нам</a>
+				<div class="container">
+					<div class="footer-contacts-cards">
+						<b>Nёrds Design Studio</b>
+						<p>191186, Санкт-Петербург<br>
+						ул. Б. Конюшенная, д. 19/8</p>
+						<p>тел. +7 (812) 275-75-75</p>
+						<a href="#">Напишите нам</a>
+					</div>
 				</div>
 			</div>
-			<div class="footer-social">
+			<div class="container footer-social">
 				<ul class="social-links">
 					<li><a class="social-link social-link-vk" href="#">Вконтакте</a></li>
 					<li><a class="social-link social-link-facebook" href="#">Фейсбук</a></li>
 					<li><a class="social-link social-link-inst" href="#">Инстаграм</a></li>
 				</ul>
-				<b>Давайте дружить, это выгодно!</b>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
+				<div class="container-sale">
+					<b>Давайте дружить, это выгодно!</b>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</div>
 		</footer> 
 

@@ -11,7 +11,7 @@
 	<body>
 		<!--Шапка сайта-->
 		<header class="main-header">
-			<div class="container-navigation">
+			<div class="container header-container">
 				<nav class="main-navigation">
 					<a class="main-header-logo">
 						<img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс">
@@ -34,16 +34,16 @@
 			<!--Раздел - Преимущества-->
 			<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
 			<section class="slider">
-				<div class="container-slider">
+				<div class="container">
 					<h2 class="visually-hidden">Преимущества</h2>
 					<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
 					<input class="visually-hidden" type="radio" id="product-2" name="toggle">
 					<input class="visually-hidden" type="radio" id="product-3" name="toggle">
-						<div class="slider-controls">
-							<label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-							<label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-							<label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
-						</div>
+					<div class="slider-controls">
+						<label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+						<label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+						<label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+					</div>
 					<ul class="slider-list">
 						<li class="slider-item">
 							<h3>Долго, дорого,<br> скрупулезно.</h3>
@@ -66,7 +66,7 @@
 			<!--Раздел сайта - Услуги-->
 			<section class="services">
 				<h2 class="visually-hidden">Услуги компании</h2>
-				<div class="container-services">
+				<div class="container">
 					<ul class="services-list">
 						<li class="service-item">
 							<h3 aria-label="Веб-сайты, созданные нашими разработчиками">Веб-сайты</h3>
@@ -91,7 +91,7 @@
 			</section> 
 			<!--Раздел сайта - О нас--> 
 			<section class="about">
-				<div class="container-about">
+				<div class="container about-container">
 					<div class="about-left">	
 						<b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b>
 						<p>Исповедуем принцип минимализма и чистоты.Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p> 
@@ -123,7 +123,7 @@
 			<!--Раздел сайта - Наши работы-->
 			<section class="works">
 				<h2 class="visually-hidden">Наши работы</h2>
-				<div class="container-works">
+				<div class="container">
 					<ul class="works-list">
 						<li class="works-item">
 							<a class="work-link" href="#">
@@ -153,15 +153,17 @@
 		<footer class="main-footer">
 			<div class="footer-contacts">
 				<img src="img/map.png" alt="Карта">
-				<div class="container-footer-contacts">
-					<b>Nёrds Design Studio</b>
-					<p>191186, Санкт-Петербург<br>
-					ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
-					<a href="#">Напишите нам</a>
+				<div class="container">
+					<div class="footer-contacts-cards">
+						<b>Nёrds Design Studio</b>
+						<p>191186, Санкт-Петербург<br>
+						ул. Б. Конюшенная, д. 19/8</p>
+						<p>тел. +7 (812) 275-75-75</p>
+						<a href="#">Напишите нам</a>
+					</div>
 				</div>
 			</div>
-			<div class="footer-social">
+			<div class="container footer-social">
 				<ul class="social-links">
 					<li><a class="social-link social-link-vk" href="#">Вконтакте</a></li>
 					<li><a class="social-link social-link-facebook" href="#">Фейсбук</a></li>
