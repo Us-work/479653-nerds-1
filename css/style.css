@@ -440,34 +440,84 @@ input[type="radio"].visually-hidden {
 }
 
 .about-left b {
+	display: block;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
+	margin-bottom: 35px;
+}
+
+.about-left p {
+	color: #283136;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .about-left h3 {
 	font-weight: 700;
 	text-transform: uppercase;
+	color: #000000;
+	margin-top: 39px;
+	margin-bottom: 0;
 }
 
 .about-works {
 	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.about-works li {
+	display: block;
+	position: relative;
+
+	padding-top: 24px;
+	padding-left: 36px;
+	color: #283136;
+}
+
+.about-works li::before {
+	content: "";
+	display: block;
+	position: absolute;
+
+	width: 25px;
+	height: 2px;
+	bottom: 12px;
+	left: 0;
+
+	background-color: #fb565a;
+}
+
+.about-right img {
+	display: block;
+	margin-bottom: 35px;
 }
 
 .about-progress caption {
 	font-weight: 700;
 	text-transform: uppercase;
+
+	padding-bottom: 32px;
 }
 
 .about-progress-item:first-child td {
 	font-size: 45px;
-	line-height: 10px;
+	line-height: 45px;
 	font-weight: 700;
+
+	padding-top: 0;
+	padding-right: 19px;
+	padding-bottom: 16px;
+	padding-left: 0;
 }
 
 .about-progress-item:last-child td {
 	font-size: 16px;
 	line-height: 18px;
+
+	color: #283136;
 }
 
 /*Стилизуем раздел Наши работы*/
@@ -490,7 +540,10 @@ input[type="radio"].visually-hidden {
 }
 
 .work-link img {
+	display: block;
 	opacity: 0.2;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .work-link:hover img,
@@ -505,6 +558,8 @@ input[type="radio"].visually-hidden {
 /*Как разместить картинки посередине контейнера?*/
 
 /*Стилизуем Подвал сайта*/
+
+
 
 .footer-contacts {
 	position: relative;
@@ -529,22 +584,39 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts-cards {
-	width: 320px;
-	height: 310px;
+	position: relative;
+	width: 220px;
+	padding: 47px 50px;
 	background-color: #ffffff;
 	margin-top: 55px;
 	margin-bottom: 55px;
 }
 
-.footer-contacts-cards b {
+.footer-contacts-cards h3 {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 20px;
+
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .footer-contacts-cards p {
 	font-size: 16px;
 	line-height: 18px;
+	color: #666666;
+
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.footer-contacts-button {
+	padding: 16px 43px;
+	background-color: #fb565a;
+
+	margin-top: 35px;
 }
 
 .footer-social {
@@ -566,6 +638,13 @@ input[type="radio"].visually-hidden {
 }
 
 .social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 43px;
+	height: 43px;
+
+	background-color: #000000;
 	display: block;
 	font-size: 0;
 	width: 78px;
@@ -577,15 +656,15 @@ input[type="radio"].visually-hidden {
 }
 
 .social-link-vk {
-	background-image: url("../img/vk-icon.svg");
+	/*background-image: url("../img/vk.svg");*/
 }
 
 .social-link-facebook {
-	background-image: url("../img/fb-icon.svg");
+	/*background-image: url("../img/fb-icon.svg");*/
 }
 
 .social-link-inst {
-	background-image: url("../img/insta-icon.svg");
+	/*background-image: url("../img/insta-icon.svg");*/
 }
 
 .social-link:hover,
@@ -595,7 +674,6 @@ input[type="radio"].visually-hidden {
 
 .social-link:active {
 	background-color: #d7373b;
-	opacity: 0.3;
 }
 
 .container-sale b {
@@ -631,14 +709,19 @@ input[type="radio"].visually-hidden {
 
 /*Стилизация страницы КАТАЛОГА*/
 
+.page-title-container {
+	background-color: #eeeeee;
+}
+
 .page-title {
 	display: block;
 	font-size: 55px;
 	line-height: 55px;
-	padding-top: 80px;
-	padding-bottom: 120px;
+	text-align: center;
+	padding-top: 55px;
+	padding-bottom: 115px;
 	margin: 0 auto;
-	background-color: #eeeeee;
+	
 	margin-bottom: 60px;
 }
 
@@ -653,7 +736,7 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper-catalog-left {
-	width: 280px;
+	max-width: 280px;
 	padding: 0;
 	margin: 0;
 }
@@ -668,6 +751,7 @@ input[type="radio"].visually-hidden {
 
 .filter-item {
 	margin: 0;
+	margin-bottom: 60px;
 	padding: 0;
   
 	border: none;
@@ -679,8 +763,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-item legend {
+	display: block;
 	font-size: 18px;
-	line-height: 24px;
+	line-height: 30px;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -784,10 +869,48 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+/*Стилизация фильтра сеток*/
+
+.filter-grid {
+	margin: 0;
+	margin-bottom: 50px;
+	padding: 0;
+  
+	border: none;
+}
+
+.filter-grid legend {
+	display: block;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+/*Стилизация фильтра Особенности*/
+
+.filter-special {
+	margin: 0;
+	margin-bottom: 50px;
+	padding: 0;
+  
+	border: none;
+}
+
+.filter-special legend {
+	display: block;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
 /*Стилизация списка шаблонов*/
 
 .catalog-list {
-	width: 800px;
+	max-width: 800px;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
@@ -798,10 +921,71 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list-item {
+	position: relative;
 	width: 360px;
 	height: 620px;
 	margin-top: 35px;
 	margin-left: 40px;
+}
+
+.catalog-list-item img {
+	display: block;
+}
+
+.catalog-list-item::before {
+	content: "";
+	display: block;
+	background: url("../img/browser.svg") no-repeat;
+	height: 40px;
+	opacity: 0.12;
+}
+
+.catalog-list-item:hover::before {
+	opacity: 1;
+}
+
+.catalog-list-item-info {
+	display: none;
+	position: absolute;
+	box-sizing: border-box;
+	text-align: center;
+	min-height: 230px;
+	bottom: 0;
+	min-width: 360px;
+	padding: 0;
+	padding-top: 30px;
+	background-color: #eeeeee;
+}
+
+.catalog-list-item:hover {
+	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.3);
+}
+
+.catalog-list-item:hover .catalog-list-item-info {
+	display: block;
+}
+
+.catalog-list-item h3 {
+	display: block;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000000;
+
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.catalog-list-item-info p {
+	width: 260px;
+	line-height: 18px;
+	color: #666666;
+
+	margin-top: 0;
+	margin-bottom: 28px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .button-catalog-item {
@@ -866,4 +1050,57 @@ input[type="radio"].visually-hidden {
 .pagination-item-next a:active {
 	background-color: #d5d5d5;
 	color: rgba(255, 255, 255, 0.3);
+}
+
+/*Стилизация формы Напишите нам*/
+
+.modal-write {
+	display: block;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 960px;
+	height: 590px;
+	margin: 0;
+	padding: 0;
+
+	background-color: #ffffff;
+	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.modal-write h2 {
+	display: block;
+	width: 760px;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+
+	margin-top: 70px;
+	margin-left: 100px;
+	margin-bottom: 45px;
+}
+
+.write-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-height: 355px;
+
+	margin: 0 100px;
+}
+
+.write-form-name,
+.write-form-mail {
+	display: block;
+	flex-basis: 360px;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.write-form-write {
+	flex-basis: 770px;
+	margin-top: 0;
+	max-height: 145px;
+	margin-bottom: 45px;
 }
